@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Style sheets</title>
+		<style>
+
+
+
+		</style>
+		<script src="circle-area.js"></script>
+	</head>
+	<body>
+		<div id="page_container"> 
+			<label>Select a radius from the list</label>
+			<select onchange="alcCircleArea(document.getElementById('num1').value);" id="num1">
+				<option value="1.5">1.5</option>
+				<option value="7">7</option>
+				<option value="20">20</option>
+			</select>
+		
+			<div class="data_entry data_circle">
+				<label>Enter the radius of the circle</label><br>
+				<input type="number" id="number" name="number" value="" placeholder="Enter the radius">
+				<input type="submit" id="button" onclick="alcCircleArea(document.getElementById('number').value);" value="Find area">
+			</div>
+			<div id="data_result" class="data_result data_circle">
+
+			</div>
+		</div>
+
+	
+	</body>
+</html>
